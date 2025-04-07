@@ -118,5 +118,28 @@ section {
 
 .animais-descricao section {
   margin-bottom: 3rem;
-  
+
+}
+
+.faq-list {
+  grid-column: 2 / 4;
+
+}
+
+.faq-list dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #E54;
+
+}
+
+.faq-list dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #FB5;
 }
