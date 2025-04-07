@@ -98,11 +98,16 @@ section {
 
 .animais-lista::-webkit-scrollbar-thumb {
   background: #FB5;
-  border-radius: 10px;
-  border-left: 4px solid #FB5;
-  border-right: 4px solid #FB5;
+  border-radius: 8px;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
 }
 
 .animais-descricao {
   grid-column: 3; 
+}
+
+.animais-lista::-webkit-scrollbar-track {
+  background: #faf6ed;
+  
 }
