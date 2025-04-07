@@ -110,4 +110,13 @@ section {
 .animais-lista::-webkit-scrollbar-track {
   background: #faf6ed;
   
+  
+}
+.animais-descricao {
+  grid-column: 3;
+}
+
+.animais-descricao section {
+  margin-bottom: 3rem;
+  
 }
