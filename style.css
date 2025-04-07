@@ -58,11 +58,33 @@ body h1, h2, ul, li, p, dd, dt, dl {
   } 
   
   .titulo { 
-    font-display: 'playfair display SC'', georgia;
-
+    font-display: 'playfair display SC', georgia;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    grid-column: 1 / 4;
   }
+.animais h2::before {
+    content: "🐾";
+    display: inline-block;
+    width: 40px;
+    height: 10px;
+    margin-right: 10px;
+    background: #FB5;
+      
+    }
   
+  .animais p {
+    font-family: Helvetica, Arial;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
  
   section {
     scroll-margin-top: 30px; 
+  }
+
+  .animais-lista {
+    height: 370px;
   }
