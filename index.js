@@ -17,4 +17,33 @@
     });
 
 */
+/* 
+Parãmetros do forEach
+O primeiro parâmetro é o callback, ou seja, a função que será executada
+a cada item. Essa função pode receber até três parâmetros:
+1. O item atual do loop (item)
+2. O índice do item atual (index)
+3. O array original (array)
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach((item, index, array) => {
+            console.log(item, index, array);
+        });
+        
+    */
 
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach((item, index) => {
+            console.log(item, index);
+        });
+
+        /* Arrow Function
+        Sintaxe Curta em relação a funtion expression, Basta 
+        remover a palavra function e adicionar o fat arrow => após 
+        os argumentos.
+        const imgs = document.querySelectorAll('img');
+        imgs.forEach((item, index) => {
+            console.log(item, index);
+        });
+        */
+
+        
