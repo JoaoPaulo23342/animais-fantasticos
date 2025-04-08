@@ -46,4 +46,12 @@ a cada item. Essa função pode receber até três parâmetros:
         });
         */
 
+    const p2 = document.querySelectorAll('p');
+    
+    
+    p2.forEach((item, index) => {
+        console.log(index, item.innerText);
+
         
+        
+    });
