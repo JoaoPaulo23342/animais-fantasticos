@@ -223,5 +223,11 @@ section {
   .grid-section h1 {
     font-size: 3rem;
   }
+  .menu {
+    margin-top: 0px;
+  }
+  .copy {
+    margin-bottom: 0px;
+  }
 }
 
