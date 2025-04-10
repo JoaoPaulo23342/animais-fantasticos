@@ -1,12 +1,17 @@
-const menu = document.querySelector('.menu');
+const menu = document.querySelectorAll('.menu *')
 
-menu.classList.add('ativo', 'azul', 'amarelo')
+menu.forEach(element => {
+    element.classList.add('ativo')
+    console.log(element)
+});
 
 
-menu.classList.remove('azul')
 
-menu.classList.replace('ativo', 'desativado')
-menu.classList.toggle('ativo')
+menu.forEach((item, index) => {
+    item.classList.remove('ativo')
+    console.log(item)
+})
+
 
 
 
