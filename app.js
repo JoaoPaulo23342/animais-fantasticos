@@ -5,10 +5,14 @@ const h1 = document.querySelector('h1')
 function handleEv(ev) {
     console.log(ev.type, ev)
 }
-window.addEventListener('scroll', handleEv)
 
-const imgs = document.querySelectorAll('img')
+
+const imgs = document.querySelectorAll('img');
+
+function handleImg(ev) {
+   console.log(ev.target);
+} 
 
 imgs.forEach((img) => {
-    console.log(img)
-})
+    img.addEventListener('click', handleImg);
+});
