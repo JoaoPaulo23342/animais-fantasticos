@@ -28,3 +28,18 @@ all.forEach((item) => {
         console.log(itemRemovido)
     })
 })
+
+all.forEach((item) => {
+    item.addEventListener('keypress', (ev) => {
+        ev.preventDefault()
+        let key = ev.key
+        for(let i = 0; i < item.length; i++) {
+            item[i].style.fontSize = '2rem'
+        }
+        if(key === 't') {
+            item.style.fontSize = '2rem'
+        } else if (key === 'd') {
+            item.style.fontSize = '1rem'
+        }
+    })
+})
