@@ -45,12 +45,22 @@ img.addEventListener('click', chamarAtras)
     à cada um deles o evento desejado.
 */
 
-const imgs = document.querySelectorAll('img')
+const imgs = document.querySelectorAll('.animais-lista')
 function imgSrc(ev) {
     const src = ev.currentTarget.getAttribute('src')
-    console.log(src)
+    console.log(ev.target.getAttribute('alt'))
 }
 
 imgs.forEach((img) => {
     img.addEventListener('click', imgSrc)
 })
+
+
+const menu = document.querySelectorAll('.menu')
+
+menu.forEach((item) => {
+    menu.preventDefault()
+    item.addEventListener('click', (ev) => {
+        
+        item.setAttribute('class', 'ativo')
+})})
