@@ -1,18 +1,6 @@
+const img = document.querySelector('img')
 
-
-
-const h1 = document.querySelector('h1')
-function handleEv(ev) {
-    console.log(ev.type, ev)
+function callback(ev) {
+  console.log(ev)
 }
-
-
-const imgs = document.querySelectorAll('img');
-
-function handleImg(ev) {
-   console.log(ev.target);
-} 
-
-imgs.forEach((img) => {
-    img.addEventListener('click', handleImg);
-});
+img.addEventListener('click', callback)
