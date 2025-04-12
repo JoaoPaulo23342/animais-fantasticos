@@ -12,7 +12,7 @@ const imagensList = document.querySelector('.animais-lista')
 imagensList.addEventListener('click', callBackList)
 
 // CurrentTarget Exibe o elemento global do evento
-// target Exibe o elemento que disparou o evento
+// target Exibe o elemento que disparou o evento (o evento especifico)
 // type verifica o tipo do evento retornando uma string 
 const linkExterno = document.querySelector('a[href^="http"]')
 function handleLinkExterno(ev) {
@@ -38,3 +38,19 @@ function chamarAtras() {
 
 }
 img.addEventListener('click', chamarAtras)
+
+/* ForEach e Eventos
+    O método addEventListener é adicionado à um único elemento, então
+    é necessário um loop entre elementos de uma lista para adicionarmos
+    à cada um deles o evento desejado.
+*/
+
+const imgs = document.querySelectorAll('img')
+function imgSrc(ev) {
+    const src = ev.currentTarget.getAttribute('src')
+    console.log(src)
+}
+
+imgs.forEach((img) => {
+    img.addEventListener('click', imgSrc)
+})
