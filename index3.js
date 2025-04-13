@@ -79,4 +79,5 @@ const novoH1 = document.createElement('h1')
 novoH1.innerHTML = 'Novo Título'
 novoH1.classList.add('titulo')
 animais.appendChild(novoH1)
+// isso aqui adiciona o novoH1 dentro do elemento animais 
 
