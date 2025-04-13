@@ -75,9 +75,14 @@ const mapa = document.querySelector('.mapa')
 Podemos Criar novos elementos utilizando o createElement, 
 e depois adicionar ele na página com o appendChild ou insertBefore
 */
-const novoH1 = document.createElement('h1')
-novoH1.innerHTML = 'Novo Título'
-novoH1.classList.add('titulo')
-animais.appendChild(novoH1)
+const novoH1 = document.createElement('h1') // cria um novo elemento h1
+novoH1.innerHTML = 'Novo Título' // adiciona o texto dentro do h1
+novoH1.classList.add('titulo') // adiciona a classe titulo ao h1
+mapa.appendChild(novoH1)
 // isso aqui adiciona o novoH1 dentro do elemento animais 
+
+/* Clonar Elementos
+todo elemento selecionado é único. para criarmos um novo elemento
+baseado no anterior, é necessário ultilizar o método cloneNode()
+*/
 
