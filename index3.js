@@ -48,7 +48,7 @@ all.forEach((item) => {
 const h1 = document.querySelector('h1')
 
 h1.innerHTML = 'Olá, Mundo!'
-
+const faq = document.querySelector('#faq')
 const lista = document.querySelector('.animais-lista')
 const animais = document.querySelector('.animais')
 const contato = document.querySelector('.contato')
@@ -60,11 +60,23 @@ const mapa = document.querySelector('.mapa')
 // pai exemplo lista.appendChild(titulo)
 //adiciona o elemento titulo ao final da lista
 
-contato.insertBefore(animais, mapa)
+//contato.insertBefore(animais, mapa)
 
 /* o insertBefore adiciona o elemento no inicio da lista do elemento pai
 // exemplo lista.insertBefore(titulo, mapa)
 // adiciona o elemento titulo antes do mapa
+// o elemento do segundo parametro tem que ser obrigatoriamente filho
+// do elemento pai que está sendo utilizado
 */
 
+//contato.replaceChild(lista, titulo)
+
+/* Criar novos Elementos 
+Podemos Criar novos elementos utilizando o createElement, 
+e depois adicionar ele na página com o appendChild ou insertBefore
+*/
+const novoH1 = document.createElement('h1')
+novoH1.innerHTML = 'Novo Título'
+novoH1.classList.add('titulo')
+animais.appendChild(novoH1)
 
