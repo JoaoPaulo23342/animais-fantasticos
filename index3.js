@@ -93,4 +93,7 @@ const titulo3 = document.querySelector('h1')
 // é necessário usar o cloneNode(true) para clonar o elemento
 
 const cloneTitulo = titulo2.cloneNode(true) // clona o elemento h1
-contato.appendChild(cloneTitulo)
+faq.appendChild(cloneTitulo) // adiciona o clone dentro do elemento faq 
+//se no clone node passar o true, ele clona o elemento e todos os filhos
+//se passar o false ele clona apenas o elemento
+
