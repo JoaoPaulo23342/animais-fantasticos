@@ -86,3 +86,11 @@ todo elemento selecionado é único. para criarmos um novo elemento
 baseado no anterior, é necessário ultilizar o método cloneNode()
 */
 
+const titulo2 = document.querySelector('h1');
+const titulo3 = document.querySelector('h1')
+
+// titulo2, titulo3 são o mesmo elemento, para clonar o elemento
+// é necessário usar o cloneNode(true) para clonar o elemento
+
+const cloneTitulo = titulo2.cloneNode(true) // clona o elemento h1
+contato.appendChild(cloneTitulo)
