@@ -97,3 +97,18 @@ faq.appendChild(cloneTitulo) // adiciona o clone dentro do elemento faq
 //se no clone node passar o true, ele clona o elemento e todos os filhos
 //se passar o false ele clona apenas o elemento
 
+const menu3 = document.querySelector('.menu')
+const cloneMenu = menu3.cloneNode(true) // clona o elemento menu
+const copy = document.querySelector('.copy') // seleciona o elemento copy
+copy.appendChild(cloneMenu) // adiciona o clone dentro do elemento copy
+const body = document.querySelector('body')
+body.replaceChild(animais, faq)
+
+function contagem(n) {
+    if(n > 0) {
+    console.log(n)
+    contagem(n-1)
+    }
+}
+
+contagem(10)
