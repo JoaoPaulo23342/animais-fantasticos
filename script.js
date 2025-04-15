@@ -1,20 +1,13 @@
-const menu = document.querySelectorAll('.menu *')
-
-menu.forEach(element => {
-    element.classList.add('ativo')
-    console.log(element)
-});
+const tabMenu = document.querySelectorAll('.js-tabmenu li');
+const tabContent = document.querySelectorAll('.js-tabcontent section');
 
 
-
-menu.forEach((item, index) => {
-    item.classList.remove('ativo')
-    console.log(item)
-})
-
-
-
-
+function activeTab (i) {
+    tabContent.forEach( (content) => {
+        content.classList.remove('ativo')
+    })
+    tabContent[i].classList.add('ativo')
+}
 
 
 
