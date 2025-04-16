@@ -1,6 +1,13 @@
+function initTabNav() {
 const tabMenu = document.querySelectorAll('.js-tabmenu li');
 const tabContent = document.querySelectorAll('.js-tabcontent section');
-tabContent[0].classList.add('ativo')
+
+if (tabMenu.length && tabContent.length) {
+    tabContent[0].classList.add('ativo')
+
+
+
+
 
 function activeTab (i) {
     tabContent.forEach( (content) => {
@@ -15,7 +22,17 @@ tabMenu.forEach((item, index) => {
     })
 })
 
-
+} 
+}
+initTabNav()
+function initAccordion() {
+    this.classList.add('ativo')
+    this.nextElementSibling.classList.add('ativo');
+}
+const accordionList = document.querySelectorAll('.js-accordion dt')
+accordionList.forEach((item) => {
+    item.addEventListener('click', initAccordion)
+})
 
 
 

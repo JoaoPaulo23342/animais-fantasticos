@@ -250,3 +250,20 @@ section {
     transform: translate3d(0, 0, 1);
   }
 }
+
+.js-accordion dd {
+  display: none;
+  
+
+}
+
+.js-accordion dt::after {
+  content: ' →';
+  
+ 
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  
+}
