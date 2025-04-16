@@ -27,7 +27,7 @@ tabMenu.forEach((item, index) => {
 initTabNav()
 function initAccordion() {
     this.classList.add('ativo')
-    this.nextElementSibling.classList.add('ativo');
+    this.nextElementSibling.classList.toggle('ativo');
 }
 const accordionList = document.querySelectorAll('.js-accordion dt')
 accordionList.forEach((item) => {
