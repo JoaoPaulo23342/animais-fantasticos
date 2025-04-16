@@ -265,6 +265,7 @@ section {
  
 }
 
+
 .js-accordion dd.ativo {
   display: block;
   animation: slideDown .6s forwards;
@@ -281,4 +282,8 @@ section {
     opacity: 1;
     max-height: 300px;
   }
+}
+
+dt {
+  cursor: pointer;
 }
