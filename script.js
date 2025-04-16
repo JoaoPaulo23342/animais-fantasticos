@@ -64,14 +64,27 @@ function initTabNav() {
   }
   initScrollSuave();
 
-function initScrollAnimation() {
-  const sections = document.querySelectorAll('.js-scroll');
-  function animaScroll() {
-    sections.forEach((section, index) => {
-      const sectionTop = section.getBoundingClientRect().top
-    })
-  }
-  window.addEventListener('scroll', animaScroll);
 
-}
-initScrollAnimation();
+  function initScrollAnimation() {
+    const sections = document.querySelectorAll('.js-scroll');
+    
+    function checkScroll() {
+      const windowMetade = window.innerHeight * 0.6;
+      
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = (sectionTop - windowMetade) < 0;
+        
+        if(isSectionVisible) {
+          section.classList.add('ativo');
+        } else {
+          section.classList.remove('ativo');
+        }
+      });
+    }
+    
+    checkScroll();
+    window.addEventListener('scroll', checkScroll);
+  }
+  
+  initScrollAnimation();
