@@ -63,3 +63,15 @@ function initTabNav() {
     });
   }
   initScrollSuave();
+
+function initScrollAnimation() {
+  const sections = document.querySelectorAll('.js-scroll');
+  function animaScroll() {
+    sections.forEach((section, index) => {
+      const sectionTop = section.getBoundingClientRect().top
+    })
+  }
+  window.addEventListener('scroll', animaScroll);
+
+}
+initScrollAnimation();
