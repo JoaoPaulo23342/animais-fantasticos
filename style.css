@@ -253,12 +253,14 @@ section {
 
 .js-accordion dd {
   display: none;
+  cursor: pointer;
   
 
 }
 
 .js-accordion dt::after {
-  content: ' →';
+  content: ' ▼';
+  cursor: pointer;
   
  
 }
@@ -266,14 +268,17 @@ section {
 .js-accordion dd.ativo {
   display: block;
   animation: slideDown .6s forwards;
+
   
 }
 
 @keyframes slideDown {
   from {
     opacity: 0;
+    max-height: 0;
   }
   to {
     opacity: 1;
+    max-height: 300px;
   }
 }

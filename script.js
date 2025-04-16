@@ -24,15 +24,22 @@ tabMenu.forEach((item, index) => {
 
 } 
 }
+
 initTabNav()
+
+function faq () {
 function initAccordion() {
     this.classList.add('ativo')
     this.nextElementSibling.classList.toggle('ativo');
 }
 const accordionList = document.querySelectorAll('.js-accordion dt')
+accordionList[0].classList.add('ativo')
+accordionList[0].nextElementSibling.classList.add('ativo')
 accordionList.forEach((item) => {
     item.addEventListener('click', initAccordion)
 })
+}
+faq()
 
 
 
